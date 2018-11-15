@@ -12,6 +12,7 @@ class Solution:
 		:rtype: int
 		"""
 		#  method1:方法很简洁，但是这个关系我还没看懂.....
+		# 2018.11.15看懂了， d[p]表示pop出的值p位置前面的最大长度，加上i位置与p位置之间的距离差，刚好就是了
 		dp, stack = [0] * (len(s) + 1), []
 		for i in range(len(s)):
 			if s[i] == '(':
