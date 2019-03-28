@@ -68,4 +68,4 @@ class Solution:
 				queue.append((curr.left, ls + [curr.left.val]))
 			if curr.right:
 				queue.append((curr.right, ls + [curr.right.val]))
-		return res
+		return resd
